@@ -5,20 +5,20 @@
 class OneBuild < Formula
   desc "Frictionless way of managing project-specific commands"
   homepage "https://github.com/gopinath-langote/1build"
-  version "1.10.2"
+  version "1.10.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.2/1build_Darwin_x86_64.tar.gz"
-      sha256 "830a856d9b25ada40bd577fa9706f8f276b8dfc3b3be10e203a9146bc4318461"
+      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.3/1build_Darwin_x86_64.tar.gz"
+      sha256 "3fc5197cd70786e6113ced98352cfc5d2a9415189a9a80f00ca7e930cc1a9b97"
 
       define_method(:install) do
         bin.install "1build"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.2/1build_Darwin_arm64.tar.gz"
-      sha256 "94f8b3bce066e37732e9f4553f70f9f317ec5caba9081ec47b5ec14b76057260"
+      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.3/1build_Darwin_arm64.tar.gz"
+      sha256 "995038b2191c8897a5035fb3a611d1d6d0af40170635dcb5b964f7257c92dd58"
 
       define_method(:install) do
         bin.install "1build"
@@ -28,15 +28,15 @@ class OneBuild < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.2/1build_Linux_x86_64.tar.gz"
-      sha256 "fd28852a51ca8f69917a478d7fc758e9f4d3f483102f7e648660d71adecb474f"
+      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.3/1build_Linux_x86_64.tar.gz"
+      sha256 "e2c0ce20bb81dd4848e6c57fe7129f99638e1b6be5fe997bf87c2c8324c820ad"
       define_method(:install) do
         bin.install "1build"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.2/1build_Linux_arm64.tar.gz"
-      sha256 "b76a81dee7e0da98f0f5b158f115f0e9903471c8ade0375927ed9a82fc6c0fb4"
+      url "https://github.com/gopinath-langote/1build/releases/download/v1.10.3/1build_Linux_arm64.tar.gz"
+      sha256 "e0cd8c33954079b2c63e6280fedb1cd8123c49ab78312b90b2815f53a23b4e6d"
       define_method(:install) do
         bin.install "1build"
       end
