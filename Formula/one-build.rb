@@ -9,20 +9,20 @@ class OneBuild < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gopinath-langote/1build/releases/download/v1.10.4/1build_Darwin_x86_64.tar.gz"
-      sha256 "2bcdd4dc81d3a9d55b69fc852c260cafa3fbca097b02dcb838287c75d90b2527"
+      sha256 "333b68c3bf229f8f8ee293c5fd79976c8c302b39d2a6fe97a236fe231aa18750"
     elsif Hardware::CPU.arm?
       url "https://github.com/gopinath-langote/1build/releases/download/v1.10.4/1build_Darwin_arm64.tar.gz"
-      sha256 "a6c290fe4e3d0fac7329af4f88bbf949e1677c2315fe3fb8517fd8a687f200d3"
+      sha256 "8b5cee9d4a70bd3192fa658fbccd7bece78b056527fca3c756e2cebcfef3e1f3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/gopinath-langote/1build/releases/download/v1.10.4/1build_Linux_x86_64.tar.gz"
-      sha256 "28ced94ee3f502d173e8930381650ed7da67e7d0d998f984432c36a3f6f3fa16"
+      sha256 "7182db313924205c445b515082d6e5af16320cee6e2dab072a4412bb58ff008e"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gopinath-langote/1build/releases/download/v1.10.4/1build_Linux_arm64.tar.gz"
-      sha256 "1a91ffcca29c80f52c9680d2d8ebdcfeb70142d7ababa6bc4b492b4a4a29681d"
+      sha256 "328606d42a8f874df1bcf4b3ab24817fd1be0de9b96d1bf8135a626c79712ff4"
     end
   end
 
